@@ -91,7 +91,7 @@ public class ChessBoard {
         //System.out.println(row);
         //System.out.println(column);
         //System.out.println(queens);
-        if(queens == 0 || column == board.length) {
+        if(queens == 0 && column == board.length) {
             addBoard();
             return;
         }

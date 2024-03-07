@@ -13,11 +13,11 @@ public class Main {
 
     public static int captureResponse(Scanner s)
     {
-        System.out.print("Please enter a n value(can't be 2,3 or greater than 8): ");
+        System.out.print("Please enter a n value(can't be 2 or 3): ");
         int response;
         try{
             response = Integer.parseInt(s.nextLine());
-            if(response>8 || response == 2 || response == 3) throw new NumberFormatException();
+            if(response == 2 || response == 3) throw new NumberFormatException();
         }
         catch (NumberFormatException e)
         {
